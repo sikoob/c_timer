@@ -10,6 +10,7 @@ body {
     background-position: center center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
     font-family: 'Rubik', sans-serif;
@@ -18,9 +19,10 @@ body {
 
 h1 {
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #fffed2;
-    margin-top: 5rem;
+    text-shadow: 4px 4px 9px #66477b;
+    text-align: center;
 }
 
 .countdown-container {
@@ -34,8 +36,10 @@ h1 {
     font-weight: bold;
     font-size: 5rem;
     color: #fffed2;
+    text-shadow: 4px 4px 9px #66477b;
     line-height: 1;
     margin: 1rem 2rem; /* 1rem top und bottom 2 rem links rechts */
+    text-align: center;
 }
 
 .countdown-el {
@@ -46,6 +50,17 @@ span {
     text-align: center;
     font-size: 1.6rem;
     color: #fffed2;
-    text-shadow: 1px 1px;
+    text-shadow: 4px 4px 6px #66477b;
     margin: 1rem 2rem;    
 } 
+
+.pink {
+    display: flex;
+    justify-content: center;
+    background: url(./assets/glitter.gif);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    text-shadow: 2px 2px 2px #b000b0;
+    margin-top: 0.2rem;
+}
