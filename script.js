@@ -3,12 +3,25 @@ const hoursElement =document.getElementById('hours');
 const minutesElement =document.getElementById('minutes');
 const secondsElement =document.getElementById('seconds');
 
-let year = new Date().getFullYear()+1;
+let year = new Date().getFullYear();
 const newYears = `9 Jul ${year}` ;
+
+const cDate = new Date();
+const nYearDate = new Date(newYears);
+const distance = Math.floor(nYearDate-cDate);
+let year2 ="";
+
+if (distance > 0) {
+    year2 = new Date().getFullYear();
+} else {
+    year2 = new Date().getFullYear() +1;
+}
+
+const newYears2 = `9 Jul ${year2}`
 
 function countdown () {
     const currentDate =new Date();
-    const newYearsDate = new Date(newYears);
+    const newYearsDate = new Date(newYears2);
 
     const totalSeconds =(newYearsDate - currentDate)/ 1000;
 
